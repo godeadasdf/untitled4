@@ -1,0 +1,6 @@
+<h1>wtf</h1>
+{% if items %}
+{% for data in items %}
+<a href="{% url 'wanna_buy_save_first:detail' data.id %}">{{ data.name }}</a>
+{% endfor %}
+{% endif %}
