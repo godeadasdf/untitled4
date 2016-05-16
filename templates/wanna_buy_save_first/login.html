@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="{% url 'wanna_buy_save_first:login' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" id="name">
+    <label for="name">username:</label><br/>
+    <input type="password" name="password" id="pwd">
+    <label for="pwd">password:</label>
+    <input type="submit" value="login">
+</form>
+</body>
+</html>
