@@ -5,6 +5,7 @@
     <title></title>
 </head>
 <body>
+{{ STATIC_URL }}
 <form action="{% url 'wanna_buy_save_first:login' %}" method="post">
     {% csrf_token %}
     <input type="text" name="username" id="name">

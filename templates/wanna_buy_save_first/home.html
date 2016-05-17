@@ -1,0 +1,11 @@
+
+{% include 'wanna_buy_save_first/nav.html' %}
+{% if user %}
+<h1>Hi,{{user.name}}</h1>
+
+<h1>{{ belong }}</h1>
+
+<h1>{{ session }}</h1>
+
+<h1>{{ req }}</h1>
+{% endif %}
